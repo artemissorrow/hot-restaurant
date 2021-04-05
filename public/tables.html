@@ -25,6 +25,19 @@
             <p><a href="/api/tables">API Table Link</a> | <a href="/api/waitlist">API Wait List</a></p>
         </div></footer>
       </div>
+      <script>
+      fetch(`/api/tables`, {
+        method: 'GET',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      })
+          .then((response) => response.json())
+          .then((data) => {
+              console.log(data);
+              const { name, id, whatever } = data;
+        });
+        </script>
 </body>
 </html>
 
