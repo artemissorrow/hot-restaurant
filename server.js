@@ -16,23 +16,17 @@ app.get('/booktable', (req, res) => res.sendFile(path.join(__dirname, './public/
 
 app.get('/tables', (req, res) => res.sendFile(path.join(__dirname, './public/tables.html')));
 
-app.get('/tables', (req, res) => res.json(reservations));
+app.get('/api/tables', (req, res) => res.json(reservations));
 
-app.post('/tables', (req, res) => {
+app.post('/api/tables', (req, res) => {
     const newReservation = req.body;
   
     if(reservations.length<5){
-        console.log(newReservation);
-  
         reservations.push(newReservation);
         res.json(newReservation);
-        console.log(reservations);
     }
     else{
-        console.log(newReservation);
-  
         waitinglist.push(newReservation);
-        console.log(waitinglist);
     }
 });
 
