@@ -4,6 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+    crossorigin="anonymous"
+  />
     <title>Hot Restaurant - Book a Table</title>
 </head>
 <body>
@@ -17,6 +29,36 @@
           <a class="btn btn-primary btn-lg" href="/tables" role="button"
           ><i class="far fa-list-alt"></i> View Tables</a
         >
+        
+    <div class="row">
+      <div class="col-lg-12">
+       
+        <div class="card">
+          <div class="card-header">
+            Table Reservation
+          </div>
+          <div class="card-body">
+            <form role="form">
+              <div class="form-group">
+                <label for="reserve-name">Name</label>
+                <input type="text" class="form-control" id="reserve-name">
+              </div>
+              <div class="form-group">
+                <label for="reserve-phone">Phone Number</label>
+                <input type="text" class="form-control" id="reserve-phone">
+              </div>
+              <div class="form-group">
+                <label for="reserve-email">Email</label>
+                <input type="text" class="form-control" id="reserve-email">
+              </div>
+              <div class="form-group">
+                <label for="reserve-unique-id">Unique ID</label>
+                <input type="text" class="form-control" id="reserve-unique-id">
+              </div>
+              <button type="submit" class="btn btn-primary submit">Submit</button>
+            </form>
+          </div>
+        </div>
           <a class="btn btn-primary btn-lg" href="/" role="button"
             ><i class="fas fa-home"></i></a
           >
@@ -27,4 +69,8 @@
       </div>
 </body>
 </html>
+
+
+     
+
 
